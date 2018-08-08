@@ -1,2 +1,25 @@
 /* Put your CSS Styling here! */
-body {background-color: green};
+body {background-color: lightblue;}
+.header {
+	padding: 10px;
+	font-size: 30pt;
+    font-family: sans-serif;
+
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 80px;
+}
+.sidebar {
+    width: 130px;
+    background: #ff6677;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    padding-right:10px;
+    padding-left:10px;
+    padding-top: 15px;
+    padding-bottom:15px;
+}
+
+

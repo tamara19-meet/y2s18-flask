@@ -1,10 +1,26 @@
 <!-- Put the HTML template for your page here! -->
 <html>
 <head>
-	  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"></head>
 	<body>
-		<h1> SWIMMING</h1>
-		<p> I like swimming because I like water</p>
+		<div>
+		<div class="header">SWIMMING</div>
+		<div class="sidebar"> </div>
+		<div><p> I like swimming because i like water</p> </div>
+		<div>{% if likes_same_sport == True %}
+		<h2> My Favorite Players</h2>
+		<p> ARE:</p> </div>
+		<div><ul> 
+			{% for players in My_favorite_players %}
+			<li> {{players}} </li>
+			{% endfor %} 
+			<div> <img src= "./static/phelps2.jpeg"> <img src= "./static/Phelps.jpg"></div>
+		</ul></div>
+		<div><p> SARAH LIKES THE SAME SPORT </p>
+		{% else %} 
+		<p> SARAH DOES NOT LIKE THE SAME SPORT</p>
+		{% endif %}</div>
+	</div>
+
 	</body>
-</head>
 </html>
